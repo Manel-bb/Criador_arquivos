@@ -9,7 +9,8 @@ menu1 = " [1] ADICIONAR ELEMENTO\n" \
 " [4] SAIR"
 
 menu2 = " [1] TEXTO\n" \
-" [2] OPERAÇÕES MATEMÁTICAS" \
+" [2] OPERAÇÕES MATEMÁTICAS\n" \
+" [3] SAIR"
 
 bs()
 arq = input("Nome do arquivo: ")
@@ -26,7 +27,7 @@ while True:
 
         #opções dentro de cadastro:
         tabela_opcoes(menu2, titulo="NOVO CADASTRO")
-        atividade2 = ler_valor(1, 2, "Opção")
+        atividade2 = ler_valor(1, 3, "Opção")
         limpar()
         if atividade2 == 1:
             bs()
@@ -38,7 +39,9 @@ while True:
             if retorno:
                 resultado, conta = retorno
                 limpar()
-                cadastrar_valores(arq, resultado, " -> ".join(conta), data_hora=1)     
+                cadastrar_valores(arq, resultado, " -> ".join(conta), data_hora=1)
+        if atividade2 == 3:
+            continue     
 
     #abrir outra lista
     elif atividade == 2:
