@@ -19,7 +19,7 @@ def ler_valor(inicial, final, v="Opção"):
 def data_e_hora():
     from datetime import datetime
     agora = datetime.now()
-    d_h = agora.strftime("%d/%m/%y %H:%M:%S")
+    d_h = agora.strftime("%d/%m/%y (%H:%M:%S)")
     return d_h
 
 
