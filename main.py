@@ -19,7 +19,7 @@ abrir_arquivo(arq)
 while True:
     tabela_opcoes(menu1)
     atividade = ler_valor(1, 4, "Opção")
-
+    
     #possibilidades do menu:
     #cadastro
     if atividade == 1:
