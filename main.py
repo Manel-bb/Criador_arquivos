@@ -34,9 +34,11 @@ while True:
             limpar()
             cadastrar_valores(arq, texto, data_hora=1)
         if atividade2 == 2:
-            resultado, conta = operacao()
-            limpar()
-            cadastrar_valores(arq, resultado, " -> ".join(conta), data_hora=1)     
+            retorno = operacao()
+            if retorno:
+                resultado, conta = retorno
+                limpar()
+                cadastrar_valores(arq, resultado, " -> ".join(conta), data_hora=1)     
 
     #abrir outra lista
     elif atividade == 2:

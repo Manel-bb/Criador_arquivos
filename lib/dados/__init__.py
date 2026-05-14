@@ -39,6 +39,9 @@ def operacao():
     while True:
         operacao = ler_valor(1, 7, "Operação")
         print()
+        if operacao == 7:
+            limpar()
+            return
         if c == 2:
             primeiro_valor = float(input(f"{c-1}° valor: "))
             total = primeiro_valor
@@ -135,8 +138,6 @@ def operacao():
         conta = ("".join(str(x) for x in expr))
         operacao_completa.append(conta)
         cont = continuar("Adicionar operação")
-        if operacao == 7:
-            break
         if not cont:
             return total, operacao_completa
         limpar()
