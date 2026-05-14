@@ -4,8 +4,8 @@ from lib.dados import *
 from lib.texto import *
 
 menu1 = " [1] ADICIONAR ELEMENTO\n" \
-" [2] ABRIR OUTRA LISTA\n" \
-" [3] LER LISTA\n" \
+" [2] ABRIR OUTRO ARQUIVO\n" \
+" [3] LER ARQUIVO\n" \
 " [4] SAIR"
 
 menu2 = " [1] TEXTO\n" \
