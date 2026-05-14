@@ -1,7 +1,12 @@
 from lib.dados import *
 from lib.texto import *
 import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+# padrão:
+#os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
+# local:
+os.chdir(r"/home/Manel/Documents/textos_from_pythoncodes")
+
 
 
 def abrir_arquivo(nome):

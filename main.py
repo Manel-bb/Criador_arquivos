@@ -30,7 +30,7 @@ while True:
         limpar()
         if atividade2 == 1:
             bs()
-            texto = str(input("Texto: ")).strip().capitalize()
+            texto = str(input("Texto: ")).strip()
             limpar()
             cadastrar_valores(arq, texto, data_hora=1)
         if atividade2 == 2:
