@@ -39,7 +39,7 @@ while True:
             if retorno:
                 resultado, conta = retorno
                 limpar()
-                cadastrar_valores(arq, resultado, " -> ".join(conta), data_hora=1)
+                cadastrar_valores(arq, resultado, "\n".join(conta), data_hora=1)
         if atividade2 == 3:
             continue     
 
